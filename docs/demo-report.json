@@ -1,0 +1,127 @@
+{
+  "tool": "Upgrade Check",
+  "version": "0.1.0",
+  "current_qgis": "3.44.15",
+  "target_qgis": "4.2",
+  "fetched_at": "2026-10-04T17:12:49.125469+00:00",
+  "scope": "Official repository declarations only. No plugin was installed, changed or executed by this check.",
+  "sources": [
+    "https://plugins.qgis.org/plugins/plugins.xml?qgis=3.44",
+    "https://plugins.qgis.org/plugins/plugins.xml?qgis=4.2"
+  ],
+  "rows": [
+    {
+      "package": "contour",
+      "name": "Contour plugin",
+      "installed": "2.0.15",
+      "status": "EXPERIMENTAL",
+      "target_release": "3.0.0",
+      "notes": [
+        "Only an experimental release is listed for this target.",
+        "Installed metadata has no maximum QGIS version. The index bounds were used; absence is not proof of compatibility.",
+        "Read the author’s page for migration notes or a replacement. Declared availability is not a runtime test."
+      ],
+      "source": "https://plugins.qgis.org/plugins/contour/"
+    },
+    {
+      "package": "db_manager",
+      "name": "DB Manager",
+      "installed": "0.1.20",
+      "status": "BUNDLED",
+      "target_release": "",
+      "notes": [
+        "Part of this QGIS installation. Inclusion and behaviour in the target release were not checked."
+      ],
+      "source": ""
+    },
+    {
+      "package": "GdalTools",
+      "name": "GdalTools",
+      "installed": "",
+      "status": "MISSING",
+      "target_release": "",
+      "notes": [
+        "An old profile setting refers to this name, but no installed package was found. Review manually."
+      ],
+      "source": ""
+    },
+    {
+      "package": "grassprovider",
+      "name": "GRASS Processing Provider",
+      "installed": "2.12.99",
+      "status": "BUNDLED",
+      "target_release": "",
+      "notes": [
+        "Part of this QGIS installation. Inclusion and behaviour in the target release were not checked."
+      ],
+      "source": ""
+    },
+    {
+      "package": "MetaSearch",
+      "name": "MetaSearch Catalog Client",
+      "installed": "0.3.6",
+      "status": "BUNDLED",
+      "target_release": "",
+      "notes": [
+        "Part of this QGIS installation. Inclusion and behaviour in the target release were not checked."
+      ],
+      "source": ""
+    },
+    {
+      "package": "quick_map_services",
+      "name": "NextGIS QuickMapServices",
+      "installed": "1.5.2",
+      "status": "DECLARED",
+      "target_release": "1.5.2",
+      "notes": [
+        "Read the author’s page for migration notes or a replacement. Declared availability is not a runtime test."
+      ],
+      "source": "https://plugins.qgis.org/plugins/quick_map_services/"
+    },
+    {
+      "package": "pluginbuilder3",
+      "name": "Plugin Builder 3",
+      "installed": "3.4.3",
+      "status": "DECLARED",
+      "target_release": "3.3.2",
+      "notes": [
+        "The target candidate has an older version number. Do not downgrade automatically; consult the author for a successor.",
+        "Read the author’s page for migration notes or a replacement. Declared availability is not a runtime test."
+      ],
+      "source": "https://plugins.qgis.org/plugins/pluginbuilder3/"
+    },
+    {
+      "package": "plugin_info",
+      "name": "Plugin Info Browser",
+      "installed": "0.1.5",
+      "status": "DECLARED",
+      "target_release": "1.0.1",
+      "notes": [
+        "Read the author’s page for migration notes or a replacement. Declared availability is not a runtime test."
+      ],
+      "source": "https://plugins.qgis.org/plugins/plugin_info/"
+    },
+    {
+      "package": "processing",
+      "name": "Processing",
+      "installed": "2.12.99",
+      "status": "BUNDLED",
+      "target_release": "",
+      "notes": [
+        "Part of this QGIS installation. Inclusion and behaviour in the target release were not checked."
+      ],
+      "source": ""
+    },
+    {
+      "package": "upgrade_check",
+      "name": "Upgrade Check",
+      "installed": "0.1.0",
+      "status": "UNKNOWN",
+      "target_release": "",
+      "notes": [
+        "Exact package name not found in these official indexes. Private, renamed or other-repository plugins need a separate check."
+      ],
+      "source": ""
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+name: Core tests and package
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test comparison and report behavior
+        run: python -m unittest discover -s tests -v
+      - name: Build both archives
+        run: python tools/build_release.py
+      - name: Verify reproducible archive hashes
+        shell: python
+        run: |
+          import json, subprocess, sys
+          from pathlib import Path
+          first = json.loads(Path('dist/package-manifest.json').read_text())
+          subprocess.run([sys.executable, 'tools/build_release.py'], check=True)
+          second = json.loads(Path('dist/package-manifest.json').read_text())
+          assert first == second, 'Package changed between identical builds'

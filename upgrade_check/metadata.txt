@@ -1,0 +1,20 @@
+[general]
+name=Upgrade Check
+description=Review installed plugins against a chosen QGIS version before upgrading.
+about=Read-only official-repository availability report for the current profile. Explicit unknown, experimental and missing-reference states. No automatic upgrades, telemetry or uploads of the plugin list. Experimental GitHub release, tested on QGIS 3.44 for macOS. Windows and Linux QGIS hosts have not been tested. Support and feedback: GitHub Issues. Not listed in the official plugin catalogue.
+version=0.1.0
+qgisMinimumVersion=3.44
+qgisMaximumVersion=3.99
+author=kotijekriv
+email=
+homepage=https://github.com/kotijekriv/upgrade-check#readme
+repository=https://github.com/kotijekriv/upgrade-check
+tracker=https://github.com/kotijekriv/upgrade-check/issues
+license=GPL-3.0-or-later
+experimental=True
+deprecated=False
+category=Plugins
+tags=upgrade,compatibility,maintenance,report
+icon=icon.svg
+hasProcessingProvider=no
+changelog=0.1.0 - First experimental GitHub release: explicit target, official index comparison, read-only report, HTML and JSON export.
