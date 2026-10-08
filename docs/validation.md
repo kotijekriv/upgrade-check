@@ -18,4 +18,16 @@ The demo screenshot and example reports in this repository come from that sessio
 
 Windows and Linux QGIS hosts and the QGIS 4 interface are untested. No plugin in the report was executed under its target version. No measured time saving, customer result or successful outside use is claimed. A passing comparison test does not prove migration safety.
 
-The final downloaded release package receives a separate installation and export check before release handoff; its result is recorded here once completed.
+## Native release-package check — October 9, 2026
+
+QGIS 3.44.15 on macOS arm64, new isolated profile:
+
+- Installed the final ZIP through the native **Install from ZIP** dialog; all seven installed files matched the package.
+- Opened the addon from the Plugins menu and fetched live current/target indexes.
+- Produced eight rows: four bundled components, this addon, and three explicitly labelled synthetic metadata-only fixtures. The fixtures were disabled and never imported.
+- Exported the HTML report through the native Save dialog and checked its eight rows and escaped contents.
+- Passed the 18 portable core tests. The initial public CI passed on Linux, Windows and macOS; those are core/package checks, not additional QGIS host tests.
+
+Installable ZIP SHA-256: `5072a288e923f3399d7b2305e3f420fa973d32fab22042f4a0cb56d60ecb0043`.
+
+The October 9 fixture profile is separate from the historical October 4 screenshot and samples. No user data or private projects were used.
